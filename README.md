@@ -19,13 +19,13 @@
 To give you a better idea of the app's interface and functionality, here are some screenshots:  
 
 📌 **QR Code Generation Screen**  
-![Qrcode Generation Screen](code_generator/assets/screen3.jpg)  
+![Qrcode Generation Screen](assets/screen3.jpg)  
 
 📌 **List of Products Screen**  
-![List of products Screen](code_generator/assets/screen2.jpg)  
+![List of products Screen](assets/screen2.jpg)  
 
 📌 **Add Product to Database Screen**  
-![Add Product Screen](code_generator/assets/screen1.jpg)  
+![Add Product Screen](assets/screen1.jpg)  
 
 📝 *Note: Ensure that the images are placed in the `code_generator/screenshots/` directory of your repository to display correctly.*  
 
