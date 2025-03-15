@@ -1,0 +1,48 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.ahmed_ak.code_generator.code_generator"
+    compileSdk = 35 // Android 14 (API 34)
+
+    compileOptions {
+        // Use JDK 17 for modern Android development
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17" // Align with JDK 17
+    }
+
+    defaultConfig {
+        applicationId = "com.ahmed_ak.code_generator.code_generator"
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion // Ensure this is >= 34
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+            // Enable code shrinking and optimization (recommended for release)
+            shrinkResources true
+            minifyEnabled true
+            
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+// Configure Kotlin to use JDK 17
+kotlin {
+    jvmToolchain(17)
+}
