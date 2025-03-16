@@ -27,8 +27,6 @@ To give you a better idea of the app's interface and functionality, here are som
 📌 **Add Product to Database Screen**  
 ![Add Product Screen](assets/screen_1.jpg)  
 
-📝 *Note: Ensure that the images are placed in the `code_generator/screenshots/` directory of your repository to display correctly.*  
-
 ---
 
 ## 🛠️ Getting Started  
